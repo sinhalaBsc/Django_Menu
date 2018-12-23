@@ -1,0 +1,18 @@
+{% extends "menu/header.html" %}
+
+
+{% block contant %}
+
+
+
+    {% for p in object_list %}
+
+        <h5> {{ p.date|date:"Y-m-d" }} <a href="/{{p.url}}">{{p.url}}</a> </h5>
+
+    {% endfor %}
+
+
+
+   
+
+{% endblock %}
